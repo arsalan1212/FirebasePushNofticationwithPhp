@@ -5,7 +5,7 @@
 	function send_notification($token,$message){
 		
 		$url='https://fcm.googleapis.com/fcm/send';
-	    $server_key='AAAAm8RXyRs:APA91bHLgMUSb5FSQZQlF-rfj0uLM3eF4ev9Om-HdK4nhUoBIWLm9518KdPZX66UlPKPIP9dcT0kgP2C3ah-P4qGg8zVUNmlKM45-3TDkzL93VkU-5uhOV4fADZasGzs5M47Q5gyRrj0';
+	    $server_key='AAAAm8RXyRs:APA91bHLg ....... gyRrj0';  // put your own server key
 
 		$header=array('Authorization:key='.$server_key,'Content-Type:application/json');
 
