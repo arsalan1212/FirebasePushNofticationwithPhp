@@ -28,7 +28,8 @@ public class FcmInstanceIdService extends FirebaseInstanceIdService {
     }
 
     private void SendTokenToServer(final String token) {
-        final String url="http://192.168.10.2/FcmNotification/register_token.php";
+        // As the IP  Address change so Update it with the time
+        final String url="http://192.168.10.3/FcmNotification/register_token.php";
 
         StringRequest stringRequest=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
