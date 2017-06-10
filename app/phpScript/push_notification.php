@@ -36,7 +36,7 @@
 	if(mysqli_num_rows($query_result)>0){
 
 		while($row=mysqli_fetch_assoc($query_result)){
-			$tokens[]=$row;
+			$tokens[]=$row['token'];
 		}
 	}
 
